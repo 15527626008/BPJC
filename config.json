@@ -288,7 +288,7 @@
 					"type": "spline",
 					"name": "MeaDateTime",
 					"X": "VarValue",
-					"Y": "MDeep", //
+					"Y": "MDeep", 
 					"XType": "number"
 
 				}]
@@ -544,13 +544,13 @@
 			"OriY": "Y原始值(mm)",
 			"RelDisplacementX": "X的相对位移(mm)",
 			"RelDisplacementY": "Y的相对位移(mm)",
-			/**水位、土壤水分，孔隙水压**/
+			
 			"InitValue": "初始值",
 			"MDeep": "埋深(m)",
 			"MeaDateTime": "测量时间",
 			"MeaValue": "测量值",
 			"VarValue": "最终变化值",
-			/**雨量**/
+			
 			"TotalValue": "降雨量(mm)",
 		}
 	},
@@ -611,7 +611,7 @@
 					"value": 5
 				}]
 			}],
-			//Verhulst反函数模型
+			
 			[{
 				"name": "predictCount",
 				"text": "预测个数",
@@ -634,7 +634,7 @@
 				}]
 			}],
 
-			//灰色模型
+			
 			[{
 				"name": "predictCount",
 				"text": "预测个数",
@@ -660,7 +660,7 @@
 					"value": 7
 				}]
 			}],
-			//BP神经网络模型
+			
 			[{
 				"name": "predictCount",
 				"text": "预测个数",
@@ -726,7 +726,7 @@
 					"value": 7
 				}]
 			}],
-			//最小二乘拟合
+		
 			[{
 				"name": "predictCount",
 				"text": "预测个数",
@@ -786,10 +786,10 @@
 			"children": {
 				"service": {
 					"date": "2018-05-02",
-					"DataServiceName": "GetRainfall", //sensorId=2&date=2018-05-02
-					"CalcRainfall": "CalcRainfall_2", //measPntId=46&date=2018-05-02
-					"RainfallLevel": "GetRainfallLevelBySlope", //slopeId=2&Rainfall=0.00
-					"GetWarningLevel": "GetWarningLevel" //Stability=2&Level=1
+					"DataServiceName": "GetRainfall", 
+					"CalcRainfall": "CalcRainfall_2", 
+					"RainfallLevel": "GetRainfallLevelBySlope",
+					"GetWarningLevel": "GetWarningLevel" 
 				},
 				"chartType": "RainfallAnalysis",
 			},
@@ -830,7 +830,7 @@
 			"Content": "内容"
 		}
 	},
-	//"Color": ["#87CEFF", "#FFFF00", "#FFA500", "#FF6347"],
+	
 	"WaringInfo":{
 		"url":"AlertInfo",
 		"service":"GetWarningInfo",
