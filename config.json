@@ -893,7 +893,7 @@
 		}
 	},
 	"LOGIN":{
-		"url":"url1",
+		"url":"url",
 		"service":"FindUserByUserName"
 	}
 }
