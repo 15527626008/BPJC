@@ -5,9 +5,9 @@
 		"EarlyWarningService": "http://192.168.8.114:8087/EarlyWarningService.asmx/",
 		"AlertInfo": "http://192.168.8.114:8087/AlarmService.asmx/"
 	},
-	
-	"items": ["url-GetMonitorObjectTree","url-GetProjectBasicData", "AlertInfo-GetAllAlarmInfo"],
-	
+
+	"items": ["url-GetMonitorObjectTree", "url-GetProjectBasicData", "AlertInfo-GetAllAlarmInfo"],
+
 	"GlobleDataParams": {
 		"service": {
 			"MonitorObjectService": "GetMonitorObjectTree",
@@ -15,22 +15,22 @@
 		}
 	},
 	"MonitorSensorData": {
-		"service": "GetSensorBymeasPntid" 
+		"service": "GetSensorBymeasPntid"
 	},
 	"ChartParams": {
 		"name": "SensorTypeID",
 
-		"range": "2017/12/12-2017/12/18", 
-		"service": { 
+		"range": "2017/12/12-2017/12/18",
+		"service": {
 			"SensorTypeID1": "GetMeasureObliqueStatData1",
 			"SensorTypeID3": "GetPorePressureOrSoilMoistureCurveData",
-			"SensorTypeID4": "GetRainfallData", 
-			"SensorTypeID5": "GetPorePressureOrSoilMoistureCurveData", 
-			"SensorTypeID6": "GetWaterStatData", 
+			"SensorTypeID4": "GetRainfallData",
+			"SensorTypeID5": "GetPorePressureOrSoilMoistureCurveData",
+			"SensorTypeID6": "GetWaterStatData",
 			"SensorTypeID7": "GetPorePressureOrSoilMoistureCurveData"
 		},
-		"chart": "chartTypeID", 
-		
+		"chart": "chartTypeID",
+
 		"chartType": {
 			"chartTypeID1": {
 				"paramName": "measurePointID",
@@ -51,14 +51,14 @@
 					"lineWidth": 1,
 					"gridLineWidth": 1,
 					"title": {
-						"text": "X的绝对位移(mm)",
-					},
+						"text": "X的绝对位移(mm)"
+					}
 				}, {
 					"lineWidth": 1,
 					"gridLineWidth": 1,
 					"title": {
-						"text": "Y的绝对位移(mm)",
-					},
+						"text": "Y的绝对位移(mm)"
+					}
 				}],
 				"yAxis": [{
 					"reversed": true,
@@ -101,11 +101,11 @@
 					},
 					"xAxis": {
 						"title": {
-							"text": "日期",
+							"text": "日期"
 						},
 						"type": "datetime",
 						"tickPixelInterval": 150,
-						"tickInterval": 86400000, 
+						"tickInterval": 86400000,
 						"dateTimeLabelFormats": {
 							"day": "%Y-%m-%d"
 						}
@@ -123,7 +123,7 @@
 							"value": 0,
 							"width": 1,
 							"color": "#808080"
-						}],
+						}]
 					}, {
 						"title": {
 							"text": "速率",
@@ -189,7 +189,7 @@
 					},
 					"type": "datetime",
 					"tickPixelInterval": 150,
-					"tickInterval": 86400000, 
+					"tickInterval": 86400000,
 					"dateTimeLabelFormats": {
 						"day": "%Y-%m-%d"
 					}
@@ -232,7 +232,7 @@
 					},
 					"type": "datetime",
 					"tickPixelInterval": 150,
-					"tickInterval": 360000, 
+					"tickInterval": 360000,
 					"dateTimeLabelFormats": {
 						"day": "%H:%M:%S"
 					}
@@ -270,7 +270,7 @@
 					"gridLineWidth": 1,
 					"title": {
 						"text": "水压变化"
-					},
+					}
 				}],
 				"yAxis": [{
 					"reversed": true,
@@ -283,12 +283,12 @@
 						"color": "#808080"
 					}]
 				}],
-				"dataType": "Array", 
+				"dataType": "Array",
 				"reference": [{
 					"type": "spline",
 					"name": "MeaDateTime",
 					"X": "VarValue",
-					"Y": "MDeep", 
+					"Y": "MDeep",
 					"XType": "number"
 
 				}]
@@ -348,7 +348,7 @@
 					"gridLineWidth": 1,
 					"title": {
 						"text": "水分变化值(%)"
-					},
+					}
 				}],
 				"yAxis": [{
 					"reversed": true,
@@ -391,7 +391,7 @@
 					"tickInterval": 86400000,
 					"dateTimeLabelFormats": {
 						"day": "%Y-%m-%d"
-					},
+					}
 
 				}],
 				"yAxis": [{
@@ -438,11 +438,11 @@
 				},
 				"xAxis": {
 					"title": {
-						"text": "日期",
+						"text": "日期"
 					},
 					"type": "datetime",
 					"tickPixelInterval": 150,
-					"tickInterval": 86400000, 
+					"tickInterval": 86400000,
 					"dateTimeLabelFormats": {
 						"day": "%Y-%m-%d"
 					}
@@ -461,8 +461,8 @@
 					"type": "spline",
 					"name": "DateTime",
 					"X": "DateTime",
-					"Y": "TotalValue",
-				},
+					"Y": "TotalValue"
+				}
 			},
 			"LandslideForecast": {
 
@@ -482,11 +482,11 @@
 				}],
 				"xAxis": {
 					"title": {
-						"text": "日期",
+						"text": "日期"
 					},
 					"type": "datetime",
 					"tickPixelInterval": 150,
-					"tickInterval": 86400000, 
+					"tickInterval": 86400000,
 					"dateTimeLabelFormats": {
 						"day": "%Y-%m-%d"
 					}
@@ -513,27 +513,27 @@
 					"type": "spline",
 					"name": "X变形曲线",
 					"X": "date",
-					"Y": "X_shift",
+					"Y": "X_shift"
 				}, {
 					"type": "spline",
 					"name": "X变形预测曲线",
 					"X": "date",
-					"Y": "ForX_shift",
+					"Y": "ForX_shift"
 				}, {
 					"type": "spline",
 					"name": "Y变形曲线",
 					"X": "date",
-					"Y": "Y_shift",
+					"Y": "Y_shift"
 				}, {
 					"type": "spline",
 					"name": "Y变形预测曲线",
 					"X": "date",
-					"Y": "ForY_shift",
-				}],
+					"Y": "ForY_shift"
+				}]
 			}
 		},
 		"referenceTable": {
-		
+
 			"AbsDisplacementX": "X的绝对位移(mm)",
 			"AbsDisplacementY": "Y的绝对位移(mm)",
 			"DateTime": "测量日期",
@@ -544,20 +544,20 @@
 			"OriY": "Y原始值(mm)",
 			"RelDisplacementX": "X的相对位移(mm)",
 			"RelDisplacementY": "Y的相对位移(mm)",
-			
+
 			"InitValue": "初始值",
 			"MDeep": "埋深(m)",
 			"MeaDateTime": "测量时间",
 			"MeaValue": "测量值",
 			"VarValue": "最终变化值",
-			
-			"TotalValue": "降雨量(mm)",
+
+			"TotalValue": "降雨量(mm)"
 		}
 	},
 	"BaseDataParams": {
 		"title": "设备信息浏览",
 		"service": "GetDeviceBasicData",
-		"params": "",
+		"params": ""
 	},
 	"Forecast": {
 		"model": [{
@@ -585,7 +585,7 @@
 			"step", "m_ystep", "m_xxl", "m_dlxs", "m_trainstep", "model"
 		],
 		"modelParam": [
-			
+
 			[{
 				"name": "predictCount",
 				"text": "预测个数",
@@ -611,7 +611,7 @@
 					"value": 5
 				}]
 			}],
-			
+
 			[{
 				"name": "predictCount",
 				"text": "预测个数",
@@ -634,7 +634,7 @@
 				}]
 			}],
 
-			
+
 			[{
 				"name": "predictCount",
 				"text": "预测个数",
@@ -660,7 +660,7 @@
 					"value": 7
 				}]
 			}],
-			
+
 			[{
 				"name": "predictCount",
 				"text": "预测个数",
@@ -726,7 +726,7 @@
 					"value": 7
 				}]
 			}],
-		
+
 			[{
 				"name": "predictCount",
 				"text": "预测个数",
@@ -758,7 +758,7 @@
 		"SlopeForecast": {
 			"title": "滑坡变形预警模型",
 			"service": "GetDeviceBasicData",
-			"params": "",
+			"params": ""
 		},
 		"RainfallForecast": {
 			"title": "",
@@ -771,7 +771,7 @@
 				"service": {
 					"startDate": "2017-12-12",
 					"endDate": "2017-12-18",
-					"DataServiceName": "GetRainDataBySensorId_and_Date", 
+					"DataServiceName": "GetRainDataBySensorId_and_Date"
 				},
 				"chartType": "RainfallForecast"
 			}
@@ -780,35 +780,35 @@
 			"title": "",
 			"service": "GetEachItemTree",
 			"params": {
-				"itemType": 6,
+				"itemType": 6
 			},
 			"itemType": "5",
 			"children": {
 				"service": {
 					"date": "2018-05-02",
-					"DataServiceName": "GetRainfall", 
-					"CalcRainfall": "CalcRainfall_2", 
+					"DataServiceName": "GetRainfall",
+					"CalcRainfall": "CalcRainfall_2",
 					"RainfallLevel": "GetRainfallLevelBySlope",
-					"GetWarningLevel": "GetWarningLevel" 
+					"GetWarningLevel": "GetWarningLevel"
 				},
-				"chartType": "RainfallAnalysis",
-			},
+				"chartType": "RainfallAnalysis"
+			}
 		},
 		"LandslideForecast": {
 			"title": "",
 			"service": "GetEachItemTree",
 			"params": {
-				"itemType": 1, 
+				"itemType": 1
 			},
-			"itemType": "6", 
+			"itemType": "6",
 			"children": {
 				"service": {
 					"startDate": "2017-12-12",
 					"endDate": "2017-12-18",
-					"DataServiceName": "GetShiftSensorDataBySensorID_and_Date",
+					"DataServiceName": "GetShiftSensorDataBySensorID_and_Date"
 				},
-				"chartType": "LandslideForecast",
-			},
+				"chartType": "LandslideForecast"
+			}
 		}
 	},
 	"AlertInfo": {
@@ -817,48 +817,48 @@
 		"params": "",
 		"referenceTable": {
 			"Level": {
-				"title":"预警等级",
-				"array":["不报警","蓝色报警", "黄色报警", "橙色报警", "红色报警"]
+				"title": "预警等级",
+				"array": ["不报警", "蓝色报警", "黄色报警", "橙色报警", "红色报警"]
 			},
-			"State":{
-				"title":"审核状态",
-				"array":["全部", "草稿", "送审", "通过", "拒绝"]
-			} ,
+			"State": {
+				"title": "审核状态",
+				"array": ["全部", "草稿", "送审", "通过", "拒绝"]
+			},
 			"ProduceTime": "操作时间",
 			"SensorId": "操作人",
 			"Title": "测点",
 			"Content": "内容"
 		}
 	},
-	
-	"WaringInfo":{
-		"url":"AlertInfo",
-		"service":"GetWarningInfo",
-		"params":"",
+
+	"WaringInfo": {
+		"url": "AlertInfo",
+		"service": "GetWarningInfo",
+		"params": "",
 		"referenceTable": {
 			"WarningLevel": {
-				"title":"预警等级",
-				"array":["不报警","蓝色预警", "黄色预警", "橙色预警", "红色预警"]
+				"title": "预警等级",
+				"array": ["不报警", "蓝色预警", "黄色预警", "橙色预警", "红色预警"]
 			},
 
 			"WarningState": {
-				"title":"审核状态",
-				"array":["全部", "草稿", "送审", "通过", "拒绝"]
+				"title": "审核状态",
+				"array": ["全部", "草稿", "送审", "通过", "拒绝"]
 			},
-			"WarningTitle":"标题",
+			"WarningTitle": "标题",
 
 			"WarningID": "编号",
 			"Operator": "操作人",
 			"WarningName": "预警名称",
 
-			"WarningWay":"预警方式",
+			"WarningWay": "预警方式",
 			"WarningContent": "内容"
 		}
 	},
 	"HOMEPAGE": {
 		"url": "AlertInfo",
-		"verticalLabelNum":8,
-		"service":"GetProjectBasicData"
+		"verticalLabelNum": 8,
+		"service": "GetProjectBasicData"
 	},
 	"BASEINFO": {
 		"SlopeItemType": 1,
@@ -877,22 +877,22 @@
 			}
 		}
 	},
-	"MONITOROBJECT":{
-		"url":"url",
-		"service":"FindSlopeMeasPnts",
+	"MONITOROBJECT": {
+		"url": "url",
+		"service": "FindSlopeMeasPnts",
 
-		"OBJECT":{
-			"service":"GetPntData",
-			"Field":{
-				"MeasPntName":"测点名称",
-				"MeasPntLat":"测点经度",
-				"MeasPntLon":"测点纬度",
-				"Remark":"备注"
+		"OBJECT": {
+			"service": "GetPntData",
+			"Field": {
+				"MeasPntName": "测点名称",
+				"MeasPntLat": "测点经度",
+				"MeasPntLon": "测点纬度",
+				"Remark": "备注"
 			}
 		}
 	},
-	"LOGIN":{
-		"url":"url",
-		"service":"FindUserByUserName"
+	"LOGIN": {
+		"url": "url",
+		"service": "FindUserByUserName"
 	}
 }
