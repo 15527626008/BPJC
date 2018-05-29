@@ -1,14 +1,13 @@
 {
 	"info": {
 
-		"url": "http://192.168.8.114:8087/WebService1.asmx/",//http://192.168.8.110/BPYJ/WebService1.asmx/
+		"url": "http://192.168.8.114:8087/WebService1.asmx/",
 		"EarlyWarningService": "http://192.168.8.114:8087/EarlyWarningService.asmx/",
-		"AlertInfo": "http://192.168.8.114:8087/AlarmService.asmx/"//"http://192.168.8.110/BPYJ/AlarmService.asmx/"
+		"AlertInfo": "http://192.168.8.114:8087/AlarmService.asmx/"
 	},
-	//由于最初设计时的缺陷，忽略可能存在多个URL在info对象中，
-	//现在通过 key-value的形式映射url和service
+	
 	"items": ["url-GetMonitorObjectTree","url-GetProjectBasicData", "AlertInfo-GetAllAlarmInfo"],
-	/*, "GetSensorTypes"*/
+	
 	"GlobleDataParams": {
 		"service": {
 			"MonitorObjectService": "GetMonitorObjectTree",
@@ -16,22 +15,22 @@
 		}
 	},
 	"MonitorSensorData": {
-		"service": "GetSensorBymeasPntid" //测点接口，获取当前测点下的所有传感器，传入参数测点id
+		"service": "GetSensorBymeasPntid" 
 	},
 	"ChartParams": {
-		"name": "SensorTypeID", //匹配service名 这个地方的名字要和下面service下面的SensorTypeID1非数字部分相同
+		"name": "SensorTypeID",
 
-		"range": "2017/12/12-2017/12/18", //初始化查询范围
-		"service": { //接口配置
-			"SensorTypeID1": "GetMeasureObliqueStatData1", //测斜
-			"SensorTypeID3": "GetPorePressureOrSoilMoistureCurveData", //现场环境温湿度
-			"SensorTypeID4": "GetRainfallData", //降雨量
-			"SensorTypeID5": "GetPorePressureOrSoilMoistureCurveData", //空隙水压
-			"SensorTypeID6": "GetWaterStatData", //水位计
-			"SensorTypeID7": "GetPorePressureOrSoilMoistureCurveData" //土壤水分
+		"range": "2017/12/12-2017/12/18", 
+		"service": { 
+			"SensorTypeID1": "GetMeasureObliqueStatData1",
+			"SensorTypeID3": "GetPorePressureOrSoilMoistureCurveData",
+			"SensorTypeID4": "GetRainfallData", 
+			"SensorTypeID5": "GetPorePressureOrSoilMoistureCurveData", 
+			"SensorTypeID6": "GetWaterStatData", 
+			"SensorTypeID7": "GetPorePressureOrSoilMoistureCurveData"
 		},
-		"chart": "chartTypeID", //这个地方的名字要和下面chartType下面的chartTypeID1非数字部分相同
-		/**数据曲线类别 其中spline表示折线，column表示柱状图**/
+		"chart": "chartTypeID", 
+		
 		"chartType": {
 			"chartTypeID1": {
 				"paramName": "measurePointID",
@@ -77,7 +76,7 @@
 						"color": "#808080"
 					}]
 				}],
-				"dataType": "Array", //曲线庶数据为对象还是对象，可选的类型有Object，Array,Basic
+				"dataType": "Array",
 				"reference": [{
 					"type": "spline",
 					"name": "DateTime",
@@ -106,7 +105,7 @@
 						},
 						"type": "datetime",
 						"tickPixelInterval": 150,
-						"tickInterval": 86400000, // 坐标轴刻度间隔为一星期24 * 3600 * 1000
+						"tickInterval": 86400000, 
 						"dateTimeLabelFormats": {
 							"day": "%Y-%m-%d"
 						}
@@ -190,7 +189,7 @@
 					},
 					"type": "datetime",
 					"tickPixelInterval": 150,
-					"tickInterval": 86400000, // 坐标轴刻度间隔为一星期24 * 3600 * 1000
+					"tickInterval": 86400000, 
 					"dateTimeLabelFormats": {
 						"day": "%Y-%m-%d"
 					}
@@ -233,7 +232,7 @@
 					},
 					"type": "datetime",
 					"tickPixelInterval": 150,
-					"tickInterval": 360000, // 坐标轴刻度间隔为一小时3600 * 100
+					"tickInterval": 360000, 
 					"dateTimeLabelFormats": {
 						"day": "%H:%M:%S"
 					}
@@ -284,7 +283,7 @@
 						"color": "#808080"
 					}]
 				}],
-				"dataType": "Array", //曲线庶数据为对象还是对象，可选的类型有Object，Array,Basic
+				"dataType": "Array", 
 				"reference": [{
 					"type": "spline",
 					"name": "MeaDateTime",
@@ -311,7 +310,7 @@
 					},
 					"type": "datetime",
 					"tickPixelInterval": 150,
-					"tickInterval": 86400000, // 坐标轴刻度间隔为一星期24 * 3600 * 1000
+					"tickInterval": 86400000,
 					"dateTimeLabelFormats": {
 						"day": "%Y-%m-%d"
 					}
@@ -389,7 +388,7 @@
 					},
 					"type": "datetime",
 					"tickPixelInterval": 150,
-					"tickInterval": 86400000, // 坐标轴刻度间隔为一星期24 * 3600 * 1000
+					"tickInterval": 86400000,
 					"dateTimeLabelFormats": {
 						"day": "%Y-%m-%d"
 					},
@@ -443,7 +442,7 @@
 					},
 					"type": "datetime",
 					"tickPixelInterval": 150,
-					"tickInterval": 86400000, // 坐标轴刻度间隔为一星期24 * 3600 * 1000
+					"tickInterval": 86400000, 
 					"dateTimeLabelFormats": {
 						"day": "%Y-%m-%d"
 					}
@@ -487,7 +486,7 @@
 					},
 					"type": "datetime",
 					"tickPixelInterval": 150,
-					"tickInterval": 86400000, // 坐标轴刻度间隔为一星期24 * 3600 * 1000
+					"tickInterval": 86400000, 
 					"dateTimeLabelFormats": {
 						"day": "%Y-%m-%d"
 					}
@@ -534,7 +533,7 @@
 			}
 		},
 		"referenceTable": {
-			/**土体测斜、桩体测斜 --所有测斜位移**/
+		
 			"AbsDisplacementX": "X的绝对位移(mm)",
 			"AbsDisplacementY": "Y的绝对位移(mm)",
 			"DateTime": "测量日期",
@@ -586,7 +585,7 @@
 			"step", "m_ystep", "m_xxl", "m_dlxs", "m_trainstep", "model"
 		],
 		"modelParam": [
-			//模型阶数
+			
 			[{
 				"name": "predictCount",
 				"text": "预测个数",
@@ -772,7 +771,7 @@
 				"service": {
 					"startDate": "2017-12-12",
 					"endDate": "2017-12-18",
-					"DataServiceName": "GetRainDataBySensorId_and_Date", //sensorID=214&startDate=2017-12-12&endDate=2017-12-21
+					"DataServiceName": "GetRainDataBySensorId_and_Date", 
 				},
 				"chartType": "RainfallForecast"
 			}
@@ -799,14 +798,14 @@
 			"title": "",
 			"service": "GetEachItemTree",
 			"params": {
-				"itemType": 1, //数据接口查询条件
+				"itemType": 1, 
 			},
-			"itemType": "6", //匹配要显示的数层结构的层数
+			"itemType": "6", 
 			"children": {
 				"service": {
 					"startDate": "2017-12-12",
 					"endDate": "2017-12-18",
-					"DataServiceName": "GetShiftSensorDataBySensorID_and_Date", //sensorID=214&startDate=2017-12-12&endDate=2017-12-21
+					"DataServiceName": "GetShiftSensorDataBySensorID_and_Date",
 				},
 				"chartType": "LandslideForecast",
 			},
