@@ -2,9 +2,9 @@
 	"URL":"https://raw.githubusercontent.com/15527626008/BPJC/master/config.json",
 	"info": {
 
-		"url": "http://202.127.156.132:6003/WebService1.asmx/",
-		"EarlyWarningService": "http://202.127.156.132:6003/EarlyWarningService.asmx/",
-		"AlertInfo": "http://202.127.156.132:6003/AlarmService.asmx/"
+		"url": "http://192.168.8.114:8087/WebService1.asmx/",
+		"EarlyWarningService": "http://192.168.8.114:8087/EarlyWarningService.asmx/",
+		"AlertInfo": "http://192.168.8.114:8087/AlarmService.asmx/"
 	},
 
 	"items": ["url-GetMonitorObjectTree", "url-GetProjectBasicData", "AlertInfo-GetAllAlarmInfo"]
