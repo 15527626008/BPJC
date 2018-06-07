@@ -7,5 +7,6 @@
 		"AlertInfo": "http://202.127.156.132:6003/AlarmService.asmx/"
 	},
 
-	"items": ["url-GetMonitorObjectTree", "url-GetProjectBasicData", "AlertInfo-GetAllAlarmInfo"]
+	"items": ["url-GetMonitorObjectTree", "url-GetProjectBasicData", "AlertInfo-GetAllAlarmInfo"],
+	"useRemoteConfig":"false"
 }
