@@ -8,5 +8,5 @@
 	},
 
 	"items": ["url-GetMonitorObjectTree", "url-GetProjectBasicData", "AlertInfo-GetAllAlarmInfo"],
-	"useRemoteConfig":true
+	"useRemoteConfig":false
 }
